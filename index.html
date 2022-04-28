@@ -24,12 +24,12 @@
             <nav class="header-nav">
         <ul class="header-list list">
             <li class="navigation-item">
-                <a href="" class="navigation-link link current">Студия</a>
+                <a href="" class="navigation-link link current menu">Студия</a>
             </li>
             <li class="navigation-item">
-                <a href="./portfolio.html" class="navigation-link link">Портфолио</a>
+                <a href="./portfolio.html" class="navigation-link link menu-link">Портфолио</a>
             </li>
-            <li class="navigation-item"><a href="" class="navigation-link link">Контакты</a>
+            <li class="navigation-item"><a href="" class="navigation-link link menu-link">Контакты</a>
             </li>
         </ul>
         
@@ -54,7 +54,7 @@
         <section class="hero">
     <div class="container">
         <h1 class="hero-text">Эффективные решения для вашего бизнеса</h1>
-        <button type="button" class="hero-button">Заказать услугу</button>
+        <button type="button" class="hero-button" data-modal-open>Заказать услугу</button>
     </div>
 </section>
     <section class="about section">
@@ -104,9 +104,18 @@
     <div class="container">
     <h2 class="work-title">Чем мы занимаемся</h2>
     <ul class="work-list list">
-        <li class="work-item"><img src="./images/box-1.jpg" alt="разработка прогграмного обеспечения" width="370"/></li>
-        <li class="work-item"><img src="./images/box-2.jpg" alt="тестирование мобильного приложения" width="370"/></li>
-        <li class="work-item"><img src="./images/box-3.jpg" alt="работа с палитрой" width="370"/></li>
+        <li class="work-item">
+            <img src="./images/box-1.jpg" alt="разработка прогграмного обеспечения" width="370"/>
+        <p class="work-top-text">Десктопные приложения</p>
+    </li>
+        <li class="work-item">
+            <img src="./images/box-2.jpg" alt="тестирование мобильного приложения" width="370"/>
+        <p class="work-top-text">Мобильные приложения</p>
+    </li>
+        <li class="work-item">
+            <img src="./images/box-3.jpg" alt="работа с палитрой" width="370"/>
+        <p class="work-top-text">Дизайнерские решения</p>
+    </li>
     </ul>
     </div>
     </section>
@@ -363,5 +372,11 @@
             </div>
     </div>
         </footer>
+        <div class="backdrop is-hidden" data-modal>
+            <div class="modal">
+                <button type="button" class="modal-close-btn" data-modal-close>X</button>
+            </div>
+        </div>
+        <script src="./js/modal.js"></script>
         </body>
         </html>
