@@ -184,13 +184,15 @@ body{
 }
 
 
-.navigation-link:hover{
-    color:var(--focus-color);
+.navigation-link {
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.navigation-link:hover,
 .navigation-link:focus {
     color:var(--focus-color);
 }
+
 
 .navigation-link.current{
     color:var(--focus-color);
@@ -199,6 +201,7 @@ body{
 .navigation-icon{
     margin-right: 10px;
 }
+
 
 
 .hero {
@@ -242,6 +245,9 @@ body{
     border: none;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
+    transition: background-color 500ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .hero-button:hover,
@@ -324,21 +330,22 @@ position: relative;
 }
 
 .work-top-text{
+    display: flex;
     position: absolute;
     bottom: 0;
     font-style: normal;
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
-    text-align: center;
+    align-items: center;
+    justify-content: center;
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #FFFFFF;
     background-color: rgba(47, 48, 58, 0.8);
     width: 370px;
     height: 70px;
-    padding-top: 27px;
-    padding-bottom: 27px;
+   
 }
 
 /*----------------------TEAM-------------------*/
@@ -418,6 +425,10 @@ margin-left: 30px;
     align-items: center;
     color: #AFB1B8;
 }
+.team-soc-link{
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 
 .team-soc-icon {
     fill: currentColor;
@@ -444,6 +455,11 @@ margin-left: 30px;
     display: flex;
     justify-content: center;
 }
+
+.clients-soc-list{
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 .clients-soc-item + .clients-soc-item {
     margin-left: 30px;
 }
@@ -501,6 +517,10 @@ margin-bottom: 9px;
     line-height: 1.72;
     letter-spacing: 0.03em;
     color:rgba(255, 255, 255, 0.6);
+}
+
+.footer-link{
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-link:hover{
@@ -576,6 +596,11 @@ margin-bottom: 9px;
     color: #FFFFFF;
 }
 
+.social-soc-link {
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+
 .social-soc-icon {
     fill: currentColor;
 }
@@ -618,6 +643,9 @@ margin-bottom: 9px;
     border-radius: 4px;
     border-color: transparent;
     padding: 6px 22px;
+    transition: background-color 500ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .current-btn{
@@ -721,6 +749,8 @@ background-color: rgba(33, 150, 243, 0.9);
     0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
+
+/*---------------MODAL----------------------*/
 
 .backdrop {
     position: fixed;
