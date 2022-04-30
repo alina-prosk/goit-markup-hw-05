@@ -629,6 +629,10 @@ margin-bottom: 9px;
 .filter-btn:hover {
     background-color:var(--focus-color);
     color:var(--text-bacground-color);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
+    0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
 }
 
 .pointer {
@@ -657,6 +661,7 @@ margin-bottom: 9px;
 }
 
 .pro-link {
+    display: block;
     text-transform: none;
     text-decoration: none;
 }
@@ -709,12 +714,9 @@ background-color: rgba(33, 150, 243, 0.9);
     border-bottom: 1px solid #EEEEEE;
 }
 
-.progect-link:hover,
-.progect-link:focus {
-    border-left: 1px solid #EEEEEE;
-    border-right: 1px solid #EEEEEE;
-    border-bottom: 1px solid #EEEEEE;
-    box-sizing: border-box;
+.pro-link:hover,
+.pro-link:focus {
+   
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
     0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
