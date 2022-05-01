@@ -672,21 +672,21 @@ margin-bottom: 9px;
 .pointer {
     cursor: pointer;
 }
-/*------------------------PROGECTS-----------------------*/
+/*------------------------PROJECTS-----------------------*/
 
 
-.progect{
+.project{
     background-color: var(--header-color);
 }
 
-.progect-list{
+.project-list{
     display: flex;
     margin-left: -30px;
     margin-bottom: -30px;
     flex-wrap: wrap;
 }
 
-.progect-link{
+.project-link{
     flex-basis: calc(100% / 3 - 30px);
     margin-left: 30px;
     margin-bottom: 30px;
@@ -709,12 +709,12 @@ margin-bottom: 9px;
         1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
-.progect-top-wrap{
+.project-top-wrap{
     position: relative;
     overflow: hidden;
 }
 
-.progect-top-text{
+.project-top-text{
     position: absolute;
     top: 0;
     font-size: 18px;
@@ -730,13 +730,13 @@ background-color: rgba(33, 150, 243, 0.9);
 }
 
 
-.pro-link:hover .progect-top-text,
-.pro-link:focus .progect-top-text {
+.pro-link:hover .project-top-text,
+.pro-link:focus .project-top-text {
     transform: translateY(0);
 }
 
 
-.progect-name {
+.project-name {
     font-weight: 700;
     font-size: 18px;
     line-height: 2;
@@ -744,14 +744,14 @@ background-color: rgba(33, 150, 243, 0.9);
     color:var(--h-color)
 }
 
-.progect-item {
+.project-item {
     font-size: 16px;
     line-height: 1.88;
     letter-spacing: 0.03em;
     color: var(--text-color);
 }
 
-.progect-tumb{
+.project-tumb{
     padding-left: 24px;
     padding-right: 24px;
     padding-top: 20px;
