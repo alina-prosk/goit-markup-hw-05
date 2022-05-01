@@ -709,7 +709,6 @@ margin-bottom: 9px;
         1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
-
 .progect-top-wrap{
     position: relative;
     overflow: hidden;
@@ -730,10 +729,12 @@ background-color: rgba(33, 150, 243, 0.9);
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.progect-top-wrap:hover .progect-top-text,
-.progect-top-wrap:focus .progect-top-text {
+
+.pro-link:hover .progect-top-text,
+.pro-link:focus .progect-top-text {
     transform: translateY(0);
 }
+
 
 .progect-name {
     font-weight: 700;
